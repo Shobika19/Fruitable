@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+ 
+    .nav-link:hover{
+        color:rgb(22, 215, 22);
+        text-decoration: underline;
+        text-decoration-color: black;
+
+    }
+    .fix-img{
+        position:relative;
+    }
+    .hero-header {
+    background: linear-gradient(rgba(248, 223, 173, 0.1), rgba(248, 223, 173, 0.1)), url(../img/hero-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    background: linear-gradient(rgba(255, 176, 18, 0.7), rgba(255, 176, 18, 0.7));
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    border: 1px solid var(--bs-white);
+    background: var(--bs-primary);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next {
+    margin-right: 20px;
+}
+
+.carousel-control-prev {
+    margin-left: 20px;
+}
+
+.page-header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/cart-page-header-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn.border-secondary:hover {
+    background-color:orange;
+}
+.btn.border-secondary{
+    background-color:#15d753;
+}
+.carousel-control-next{
+    background-color:rgb(42, 181, 42);
+}
+
+.carousel-control-prev{
+    background-color:rgb(42,181,42);
+}
+.featurs .featurs-item .featurs-icon {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.text-dark:hover{
+  background-color:orange;
+  width: 200px; 
+  height:40px; 
+  border-radius:25px;
+  
+}
+
+@media only screen and (max-width: 767px) {
+    .instruct{
+      display:flex;
+      flex-direction:column;
+      margin-left:auto;
+      
+
+    }
+       }
+  img:hover{
+    transform: scale(1.1); 
+    transition:0.5s;
+    overflow:hidden;
+ }
+  .card:hover:hover{
+    box-shadow: 0 0 55px rgba(0, 0, 0, 0.4); 
+  }
+ .foot-img{
+  background-color:orange;
+  width:100%;
+  height:500px;
+ }
+ button:hover{
+  background-color:greenyellow;
+ }
+ .testimonials {
+  padding: 5rem 0;
+  background: rgba(243, 243, 243);
+}
+
+.testimonial-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color:orangered;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 1rem;
+  color:black;
+}
+
+.testimonial-box .checked {
+  color: #ff9529;
+}
+
+.testimonial-box .testimonial-text {
+  margin: 1rem 0;
+  color:black;
+  font-size:20px;
+
+}
+
+.testimonial-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.customer-photo img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+.customer-photo p{
+  color:orange;
+}
+.testimonial-container {
+ margin-top: 50px;
+}
+.testimonial-box {
+ background: #f9f9f9;
+ padding: 20px;
+ border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.testimonial-text {
+ font-size: 1rem;
+ color: #555;
+ margin: 20px 0;
+}
+.customer-photo img {
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+}
+.star-rating .fa-star {
+ color: #ffcc00;
+}
+.end h4 {
+  color: #9cde0e;
+   margin-top: 150px;
+}
+.end h1 {
+ color: rgb(87, 83, 83);
+}             
+@media only screen and (max-width:350px) {
+  .card{
+    display:flex;
+    flex-direction: column;
+    margin-top:20px;
+  
+  }
+}
+ 
+.card-custom {
+      border: 2px solid orange;
+      width: 100%; 
+      max-width: 23rem;
+      margin-left: auto;
+      margin-right: auto;  
+    
+      
+     
+    }
+    .card-body-custom {
+      background-color: orange;
+      position: relative;
+      height: 130px;
+      padding: 0;
+     
+      
+    }
+    .offer-badge {
+      background-color: #15d753;
+      color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align:center;
+      height: 100%;
+      padding: 10px;
+    }
+    .hero-section {
+      background-color: orange;
+      width: 100vw; /* Full viewport width */
+      height: 400px;
+      overflow: hidden;
+      color: white;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    .hero-section img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      max-height: 100%;
+      object-fit: cover;
+      max-width: 50%;
+      opacity: 0.7;
+    }
+    .hero-text {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 80%;
+      padding: 0 15px;
+    }
+    .btn-custom {
+      border-radius: 25px;
+      font-size: 1.25rem;
+    }
+    .hero-title {
+      font-weight: 600;
+      font-size: 3rem;
+    }
+    .hero-subtitle {
+      color: darkblue;
+      font-weight: 600;
+      font-size: 2rem;
+    }
+    .hero-description {
+      font-size: 1.25rem;
+    }
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+      .hero-subtitle {
+        font-size: 1.5rem;
+      }
+      .hero-description {
+        font-size: 1rem;
+      }
+      .btn-custom {
+        font-size: 1rem;
+      }
+    }
+    .thumbnail {
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .thumbnail img {
+      border-radius: 50%;
+      width: 100%;
+      height: auto;
+    }
+    .card-icon {
+      font-size: 100px;
+      color: orange;
+    }
+    .card-title {
+      color: #15d753;
+      font-weight: 600;
+    }
+    .card-number {
+      font-size: 30px;
+    }
+    .card-body {
+      padding: 2rem;
+    }
+  </style>
+        
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color:rgba(38, 222, 38, 0.86); margin-left:120px; font-size:30px; font-weight:700; margin-right:150px;">Fruitables</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2">
+          <li class="nav-item">
+            <a class="nav-link"  aria-current="page" href="./index.html" style="margin-left:40px;font-size:20px; margin-top:7px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./shop.html"  style=" margin-left:40px;font-size:20px; margin-top:7px;">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages.html"  style=" margin-left:40px;font-size:20px; margin-top:7px;">Pages</a>
+          </li>
+         
+         
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./contactus.html" tabindex="-1"  style="font-size:20px; margin-top:7px; margin-left:40px">Contact Us</a>
+          </li>
+        </ul>                                                                                                                                                                                                                                                                                                                                                                                                                                       
+        <div class="icons"style="margin-right:150px;">
+          <span class="material-icons" style="color:rgb(36, 238, 36);font-size:40px; padding-right:10px">search</span>
+          <span class="material-symbols-outlined"  style="color:rgb(36, 238, 36);font-size:40px; padding-right:10px">local_mall</span>
+          <span class="material-symbols-outlined" style="color:rgb(36, 238, 36);font-size:40px;">person</span>
+        </div>    
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid py-5 mb-5 hero-header">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-md-12 col-lg-7">
+                <h4 class="mb-3 " style="color:orange">100% Organic Foods</h4>
+                <h1 class="mb-5 display-3 " style="color:rgb(143, 220, 28); font-weight:600">Organic Veggies & Fruits Foods</h1>
+                <div class="position-relative mx-auto">
+                    <input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search">
+                    <button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Submit Now</button>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-5">
+                <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active rounded">
+                            <img src="img/hero-img-1.png" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
+                            <a href="#" class="btn px-4 py-2 text-white rounded">Fruits</a>
+                        </div>
+                        <div class="carousel-item rounded">
+                            <img src="img/hero-img-2.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                            <a href="#" class="btn px-4 py-2 text-white rounded">Vegetables</a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+  <div class="instruct" style="display:flex">
+    <div class="card" style="width: 18rem; margin-left:60px; display:flex; border:none">
+      <span class="material-symbols-outlined" style="margin-top:15px; font-size:100px; margin-right:100px; margin-left:80px; background-color:orange ; border-radius:50%; color:white">
+        toys
+      </span>
+      <div class="card-body">
+        <h4 class="card-title" style="text-align:center">Free Shipping</h4><br>
+        <h6 style="text-align:center">Free on order over $300</h6>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; margin-left:60px; display:flex; border:none">
+      <span class="material-symbols-outlined" style="font-size:100px; margin-left:80px; margin-right:100px; border-radius:50% ;margin-top:15px; background-color: orange;border-radius:50%; color:white">
+        shield_person
+      </span>
+      <div class="card-body">
+        <h4 class="card-title" style="text-align:center">Security Payment</h4><br>
+        <h6 style="text-align:center">100% security payment</h6>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; margin-left:60px; display:flex; border:none">
+      <span class="material-symbols-outlined" style=" font-size:100px; margin-left:80px; margin-right:100px; border-radius:50% ;margin-top:15px; background-color: orange;  border-radius:50%; color:white">
+        sync_alt
+      </span>
+      <div class="card-body">
+        <h4 class="card-title" style="text-align:center">30 Day Return</h4><br>
+        <h6 style="text-align:center">30 Day gurantee</h6>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem; margin-left:60px; display:flex; border:none ">
+      <span class="material-symbols-outlined" style=" font-size:100px; margin-left:80px; margin-right:100px; border-radius:50% ;margin-top:15px; background-color: orange;  border-radius:50%; color:white">
+        call
+      </span>
+      <div class="card-body">
+        <h4 class="card-title" style="text-align:center">24/7 Support</h4><br>
+        <h6 style="text-align:center">Support every time fast</h6>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid fruite py-5">
+    <div class="container py-5">
+      <div class="tab-class text-center">
+        <div class="row g-4">
+          <div class="col-lg-4 text-start">
+            <h1>Our Organic Products</h1>
+          </div>
+          <div class="col-lg-8 text-end">
+            <ul class="nav nav-pills d-inline-flex text-center mb-5">
+              <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill  text-decoration-none " data-bs-toggle="pill" href="">
+                 <span class="text-dark" style="width: 130px;">All Products</span>
+              </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-flex py-2 m-2 bg-light rounded-pill text-decoration-none" data-bs-toggle="pill" href="">
+                 <span class="text-dark" style="width: 130px;">Vegetables</span>
+                </a>
+              </li>
+             <li class="nav-item">
+              <a class="d-flex m-2 py-2 bg-light rounded-pill text-decoration-none" data-bs-toggle="pill" href="">
+                <span class="text-dark" style="width: 130px;">Fruits</span>
+              </a>
+             </li>
+              <li class="nav-item">
+               <a class="d-flex m-2 py-2 bg-light rounded-pill text-decoration-none" data-bs-toggle="pill" href="">
+                 <span class="text-dark" style="width: 130px;">Bread</span>
+               </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-flex m-2 py-2 bg-light rounded-pill text-decoration-none" data-bs-toggle="pill" href="">
+                 <span class="text-dark" style="width: 130px;">Meat</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>    
+   <div class="main" >
+     <div class="card" style="width:19rem; display: inline-block;  margin-top:20px; margin-left:30px; margin-right:30px; ">
+      <img src="./img/fruite-item-1.jpg" class="card-img-top" alt="..." >
+       <div class="card-body">
+        <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruit</div> 
+          <h5 class="card-title">Oranges</h5>
+          <p class="card-text">Oranges is very good for our health.It was tasty and sweety.It was Juicy fruit more people are liked this fruits</p>
+         <div class="d-flex justify-content-between flex-lg-wrap">
+           <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+           <a href="" class="btn border border-secondary rounded-pill px-3  bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+          </div>
+        </div>
+     </div>
+     <div class="card" style="width:19rem; display:inline-block;margin-top:20px;margin-left:30px; margin-right:30px; ">
+       <img src="./img/fruite-item-2.jpg" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruit</div>
+          <h5 class="card-title">Oranges</h5>
+          <p class="card-text">Oranges is very good for our health.It was tasty and sweety.It was Juicy fruit more people are liked this fruits</p>
+          <div class="d-flex justify-content-between flex-lg-wrap">
+            <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+            <a href="" id="cart" class="btn border border-secondary rounded-pill px-3  bg-warning"   ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+          </div>
+        </div>
+     </div>
+     <div class="card" style="width:19rem; display:inline-block; margin-top:20px;margin-left:30px; margin-right:30px; ">
+       <img src="./img/fruite-item-3.jpg" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruit</div>
+          <h5 class="card-title">Oranges</h5>
+          <p class="card-text">Oranges is very good for our health.It was tasty and sweety.It was Juicy fruit more people are liked this fruits</p>
+          <div class="d-flex justify-content-between flex-lg-wrap">
+            <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+            <a href="" class="btn border border-secondary rounded-pill px-3 bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width:19rem; display:inline-block;margin-top:20px;margin-left:30px; margin-right:30px; ">
+        <img src="./img/fruite-item-4.jpg" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruit</div>
+            <h5 class="card-title">Oranges</h5>
+            <p class="card-text">Oranges is very good for our health.It was tasty and sweety.It was Juicy fruit more people are liked this fruits</p>
+          <div class="d-flex justify-content-between flex-lg-wrap">
+            <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+            <a href="" class="btn border border-secondary rounded-pill px-3 bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width:19em;display: inline-block;margin-left:30px; margin-top:20px; margin-right:30px; ">
+        <img src="./img/fruite-item-5.jpg" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruit</div> 
+            <h5 class="card-title">Oranges</h5>
+            <p class="card-text">Oranges is very good for our health.It was tasty and sweety.It was Juicy fruit more people are liked this fruits</p>
+            <div class="d-flex justify-content-between flex-lg-wrap">
+              <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+              <a href="" class="btn border border-secondary rounded-pill px-3 bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+             </div>
+          </div>
+      </div>
+      <div class="card" style="width:19rem;display: inline-block;margin-left:30px; margin-top:20px; margin-right:30px; ">
+        <img src="./img/fruite-item-3.jpg" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruit</div> 
+            <h5 class="card-title">Oranges</h5>
+            <p class="card-text">Oranges is very good for our health.It was tasty and sweety.It was Juicy fruit more people are liked this fruits</p>
+            <div class="d-flex justify-content-between flex-lg-wrap">
+              <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+              <a href="" class="btn border border-secondary rounded-pill px-3  bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+             </div>
+          </div>
+      </div>
+      <div class="card" style="width:19rem;display: inline-block;margin-left:30px; margin-top:20px; margin-right:30px;">
+        <img src="./img/fruite-item-1.jpg" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruit</div> 
+             <h5 class="card-title">Oranges</h5>
+             <p class="card-text">Oranges is very good for our health.It was tasty and sweety.It was Juicy fruit more people are liked this fruits</p>
+             <div class="d-flex justify-content-between flex-lg-wrap">
+               <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+               <a href="" class="btn border border-secondary rounded-pill px-3  bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+             </div>
+           </div>
+      </div>
+      <div class="card" style="width:19rem;display: inline-block;margin-left:30px;margin-top:20px; margin-right:30px; ">
+        <img src="./img/fruite-item-6.jpg" class="card-img-top" alt="..." >
+          <div class="card-body">
+           <div class="text-white bg-success px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruit</div> 
+            <h5 class="card-title">Oranges</h5>
+            <p class="card-text">Oranges is very good for our health.It was tasty and sweety.It was Juicy fruit more people are liked this fruits</p>
+            <div class="d-flex justify-content-between flex-lg-wrap">
+              <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+              <a href="" class="btn border border-secondary rounded-pill px-3  bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+            </div>
+          </div>
+      </div>
+    </div>   
+   
+   
+
+  <div class="maincon">
+    <h1 style="margin-top:50px; margin-left:150px;">Fresh Organic Vegetables</h1>  
+    <marquee style="margin-top:50px;">
+      <div class="card" style="width: 18rem; display: inline-block;  margin-left:30px;">
+        <img src="./img/vegetable-item-1.jpg" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title">Oranges</h5>
+          <p class="card-text">Oranges is very good for our health.<br>It was tasty and sweety. It was Juicy<br> fruit more people  are liked this fruits</p>
+          <div class="d-flex justify-content-between flex-lg-wrap">
+            <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+            <a href="" class="btn border border-secondary rounded-pill px-3 text-dark bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; display:inline-block; margin-left:30px">
+        <img src="./img/vegetable-item-3.png" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title">Oranges</h5>
+          <p class="card-text">Oranges is very good for our health. <br>It was tasty and sweety.It was Juicy<br> fruit more people are liked this fruits</p>
+         <div class="d-flex justify-content-between flex-lg-wrap">
+           <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+           <a href="" class="btn border border-secondary rounded-pill px-3 text-dark bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem; display:inline-block; margin-left:30px;">
+        <img src="./img/vegetable-item-4.jpg" class="card-img-top" alt="..." >
+          <div class="card-body">
+            <h5 class="card-title">Oranges</h5>
+            <p class="card-text">Oranges is very good for our health.<br>It was tasty and sweety.It was Juicy <br>fruit more people are liked this fruits</p>
+           <div class="d-flex justify-content-between flex-lg-wrap">
+             <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+             <a href="" class="btn border border-secondary rounded-pill px-3 text-dark bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+           </div>
+          </div>
+      </div>
+      
+      <div class="card" style="width: 18rem;display: inline-block;margin-left:30px;">
+       <img src="./img/vegetable-item-1.jpg" class="card-img-top" alt="..." >
+        <div class="card-body"> 
+          <h5 class="card-title">Oranges</h5>
+          <p class="card-text">Oranges is very good for our health.<br>It was tasty and sweety.It was Juicy<br> fruit more people are liked this fruits</p>
+          <div class="d-flex justify-content-between flex-lg-wrap">
+            <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+            <a href="" class="btn border border-secondary rounded-pill px-3 text-dark bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;display: inline-block;margin-left:30px;  ">
+        <img src="./img/vegetable-item-6.jpg" class="card-img-top" alt="..." >
+          <div class="card-body"> 
+            <h5 class="card-title">Oranges</h5>
+            <p class="card-text">Oranges is very good for our health.<br>It was tasty and sweety.It was Juicy<br> fruit more people are liked this fruits</p>
+            <div class="d-flex justify-content-between flex-lg-wrap">
+              <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+              <a href="" class="btn border border-secondary rounded-pill px-3 text-dark bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" style="width: 18rem;display: inline-block;margin-left:30px;  ">
+        <img src="./img/vegetable-item-3.png" class="card-img-top" alt="..." >
+          <div class="card-body"> 
+            <h5 class="card-title">Oranges</h5>
+            <p class="card-text">Oranges is very good for our health.<br>It was tasty and sweety.It was Juicy<br> fruit more people are liked this fruits</p>
+            <div class="d-flex justify-content-between flex-lg-wrap">
+              <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+              <a href="" class="btn border border-secondary rounded-pill px-3 text-dark bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="card" style="width: 18rem;display: inline-block;margin-left:30px;  ">
+        <img src="./img/vegetable-item-5.jpg" class="card-img-top" alt="..." >
+          <div class="card-body"> 
+            <h5 class="card-title">Oranges</h5>
+            <p class="card-text">Oranges is very good for our health.<br>It was tasty and sweety.It was Juicy<br> fruit more people are liked this fruits</p>
+            <div class="d-flex justify-content-between flex-lg-wrap">
+              <p class="text-dark fs-5 fw-bold mb-0">$500</p>
+              <a href="" class="btn border border-secondary rounded-pill px-3 text-dark bg-warning"  ><span class="material-symbols-outlined">local_mall</span> Add to cart</a>
+            </div>
+          </div>
+      </div>
+    </marquee>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card card-custom">
+          <img src="./img/featur-1.jpg" class="card-img-top" alt="Feature Image">
+          <div class="card-body card-body-custom">
+            <div class="offer-badge" >
+              <div style="background-color:orange; width:150px; height:100px; position:absolute;bottom:50px; margin-left:100px">
+                 <h3 class="mb-2"> Apples</h3>
+                <h5 class="mb-0" style="color: darkblue; padding-top:5px">20% Offer</h5> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card card-custom">
+          <img src="./img/featur-2.jpg" class="card-img-top" alt="Feature Image">
+          <div class="card-body card-body-custom">
+            <div class="offer-badge" style="background-color: slategrey;">
+              <div style="background-color:orange; width:150px; height:100px; position:absolute;bottom:50px; margin-left:100px">
+                <h3 class="mb-2">Strawberry</h3>
+                <h5 class="mb-0" style="color: darkblue; padding-top:5px">20% Offer</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card card-custom">
+          <img src="./img/featur-3.jpg" class="card-img-top" alt="Feature Image">
+          <div class="card-body card-body-custom">
+            <div class="offer-badge" style="background-color:crimson;">
+              <div style="background-color:orange; width:150px; height:100px; position:absolute;bottom:50px; margin-left:100px">
+                <h3 class="mb-2">Vegetable</h3>
+                <h5 class="mb-0" style="color: darkblue;padding-top:5px">20% Offer</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      <div class="col-md-12 col-lg-7 hero-section">
+        <img src="./img/baner-1.png" alt="Fresh Exotic Fruits" class="img-fluid">
+        <div class="hero-text">
+          <h1 class="hero-title mb-4">Fresh Exotic Fruits</h1>
+          <h3 class="hero-subtitle mb-3">in Our Store</h3>
+          <p class="hero-description">The generated Lorem Ipsum is therefore always free from repetition <br> injected humour, or non-characteristic words etc.</p>
+          <button class="btn btn-light btn-custom mt-3">Buy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <h1 style="text-align: center; margin-top:50px">BestSeller Products</h1>
+    <p style="text-align:center; margin-top:30px">Latin words, combined with a handful of model sentence structures, to generate Lorem <br>Ipsum which looks reasonable.</p>
+  </div>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <div class="thumbnail">
+          <img src="./img/best-product-1.jpg" alt="Product 1">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <div class="thumbnail">
+          <img src="./img/best-product-2.jpg" alt="Product 2">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <div class="thumbnail">
+          <img src="./img/best-product-3.jpg" alt="Product 3">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <div class="thumbnail">
+          <img src="./img/best-product-4.jpg" alt="Product 4">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <div class="thumbnail">
+          <img src="./img/best-product-5.jpg" alt="Product 5">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+        <div class="thumbnail">
+          <img src="./img/best-product-6.jpg" alt="Product 6">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card bg-light border-0 d-flex align-items-center text-center">
+          <div class="card-body">
+            <i class="fa fa-users card-icon mb-4"></i>
+            <h4 class="card-title">satisfied <br>customers</h4>
+            <h6 class="card-number">390</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-light border-0 d-flex align-items-center text-center">
+          <div class="card-body">
+            <i class="fa fa-star card-icon mb-4"></i>
+            <h4 class="card-title">top <br>ratings</h4>
+            <h6 class="card-number">150</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card bg-light border-0 d-flex align-items-center text-center">
+          <div class="card-body">
+            <i class="fa fa-thumbs-up card-icon mb-4"></i>
+            <h4 class="card-title">positive <br>feedback</h4>
+            <h6 class="card-number">280</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="end">
+      <h4 style="text-align: center; color:#9cde0e; margin-top: 150px;">Our Testimonials</h4>
+      <h1 style="text-align:center;color:rgb(87, 83, 83)">Our Client Saying</h1>
+    </div>
+    
+
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Testimonial 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-box">
+                        <div class="customer-detail mb-3">
+                            <div class="customer-photo mb-2">
+                                <img src="./img/testimonial-1.jpg" alt="Ross Lee">
+                                <p class="customer-name mt-2 mb-0">Ross Lee</p><hr>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit voluptas cupiditate aspernatur odit doloribus non.
+                        </p>
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-box">
+                        <div class="customer-detail mb-3">
+                            <div class="customer-photo mb-2">
+                                <img src="./img/testimonial-1.jpg" alt="Amelia Watson">
+                                <p class="customer-name mt-2 mb-0">Amelia Watson</p><hr>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit voluptas cupiditate aspernatur odit doloribus non.
+                        </p>
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-box">
+                        <div class="customer-detail mb-3">
+                            <div class="customer-photo mb-2">
+                                <img src="./img/testimonial-1.jpg" alt="Ben Roy">
+                                <p class="customer-name mt-2 mb-0">Ben Roy</p><hr>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit voluptas cupiditate aspernatur odit doloribus non.
+                        </p>
+                        <div class="star-rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container my-5">
+      <footer
+        class="text-center text-lg-start text-black "
+        style="background-color:#96d72e"
+       >
+        <div class="container p-4 pb-0">
+         <section class="">
+           <div class="row">
+             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold" style="text-decoration: underline;">
+                  Shop name
+                </h6>
+                <p>
+                  Here you can use rows and columns to organize your footer
+                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                </p>
+              </div>
+              
+    
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold" style="text-decoration: underline;">Products</h6>
+                <p>
+                  <a style="color:black; font-weight:600"class="text">MDBootstrap</a>
+                </p>
+                <p>
+                  <a  style="color:black; font-weight:600" class="text">MDWordPress</a>
+                </p>
+                <p>
+                  <a  style="color:black; font-weight:600" class="text">BrandFlow</a>
+                </p>
+                <p>
+                  <a  style="color:black; font-weight:600" class="text">Bootstrap Angular</a>
+                </p>
+              </div>
+            
+    
+    
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold" style="text-decoration: underline;">
+                  Useful links
+                </h6>
+                <p>
+                  <a  style="color:black; font-weight:600" class="text">Your Account</a>
+                </p>
+                <p>
+                  <a style="color:black; font-weight:600"  class="text">Become an Affiliate</a>
+                </p>
+                <p>
+                  <a style="color:black; font-weight:600" class="text">Shipping Rates</a>
+                </p>
+                <p>
+                  <a style="color:black; font-weight:600" class="text">Help</a>
+                </p>
+              </div>
+   
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold; text-decoration-underline">Contact</h6>
+                <p><i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
+                <p><i class="fa fa-envelope mr-3"></i> info@gmail.com</p>
+                <p><i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+              </div>
+            </div>
+          </section>
+    
+    
+          <hr class="my-3">
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <div class="p-3">
+                  © 2020 Copyright:
+                  <a class="text-white" href="https://mdbootstrap.com/"
+                     >MDFruitables.com</a
+                    >
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                <a
+                   class="btn btn-outline-light btn-floating m-1"
+                   class="text-black"
+                   role="button"
+                   ><i class="fa fa-facebook-f"></i
+                  ></a>
+                <a
+                   class="btn btn-outline-light btn-floating m-1"
+                   class="text-black"
+                   role="button"
+                   ><i class="fa fa-twitter"></i
+                  ></a>
+                <a
+                   class="btn btn-outline-light btn-floating m-1"
+                   class="text-black"
+                   role="button"
+                   ><i class="fa fa-google"></i
+                  ></a>
+                <a
+                   class="btn btn-outline-light btn-floating m-1"
+                   class="text-black"
+                   role="button"
+                   ><i class="fa fa-instagram"></i
+                  ></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </footer>
+    </div>
+         
+
+
+           
+      
+</body>        
+</html>  
